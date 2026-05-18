@@ -4,14 +4,12 @@ function Navbar() {
 
       <div className="nav-wrapper">
 
-        {/* LOGO */}
-
+        {/* NAME LOGO */}
         <h1 className="logo">
-          Aman Khan
+          Mohammad Aman Khan
         </h1>
 
         {/* LINKS */}
-
         <ul className="nav-links">
 
           <li>
@@ -32,6 +30,13 @@ function Navbar() {
             </a>
           </li>
 
+          {/* EDUCATION */}
+          <li>
+            <a href="#education">
+              Education
+            </a>
+          </li>
+
           <li>
             <a href="#contact">
               Contact
@@ -43,7 +48,7 @@ function Navbar() {
       </div>
 
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

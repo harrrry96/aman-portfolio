@@ -1,7 +1,7 @@
 function Projects() {
   return (
     <section id="projects" className="section section-dark">
-
+      
       <div className="container-custom">
 
         <p className="section-top-title">
@@ -16,15 +16,17 @@ function Projects() {
 
           <div className="project-wrapper">
 
+            {/* Project Image */}
             <div className="project-image">
 
               <img
                 src="https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1200&auto=format&fit=crop"
-                alt="project"
+                alt="Ridox Cafe"
               />
 
             </div>
 
+            {/* Project Content */}
             <div className="project-content">
 
               <h2>
@@ -32,21 +34,33 @@ function Projects() {
               </h2>
 
               <p>
-
                 Modern cafe website built using React
                 and Tailwind CSS with premium UI design.
-
               </p>
 
               <div className="hero-buttons">
 
-                <button className="primary-btn">
-                  Live Preview
-                </button>
+                {/* Live Preview Button */}
+                <a
+                  href="https://ridox-cafe.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="primary-btn">
+                    Live Preview
+                  </button>
+                </a>
 
-                <button className="secondary-btn">
-                  GitHub
-                </button>
+                {/* GitHub Button */}
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="secondary-btn">
+                    GitHub
+                  </button>
+                </a>
 
               </div>
 
@@ -59,7 +73,7 @@ function Projects() {
       </div>
 
     </section>
-  )
+  );
 }
 
-export default Projects
+export default Projects;

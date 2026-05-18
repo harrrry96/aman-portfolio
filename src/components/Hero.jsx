@@ -5,7 +5,6 @@ function Hero() {
       <div className="hero-wrapper">
 
         {/* LEFT IMAGE */}
-
         <div className="hero-image-area">
 
           <div className="hero-glow"></div>
@@ -14,18 +13,16 @@ function Hero() {
 
           <img
             src="/profile.jpg"
-            alt="profile"
+            alt="Mohammad Aman Khan"
             className="hero-profile"
           />
 
         </div>
 
         {/* RIGHT CONTENT */}
-
         <div className="hero-content">
 
           {/* TAGS */}
-
           <div className="hero-top-tags">
 
             <span>Frontend Developer</span>
@@ -35,43 +32,56 @@ function Hero() {
           </div>
 
           {/* NAME */}
-
           <h1>
             Mohammad Aman Khan
           </h1>
 
           {/* SUBTITLE */}
-
           <h2>
             Building Modern Digital Experiences
           </h2>
 
           {/* DESCRIPTION */}
-
           <p>
 
             Passionate about creating premium modern websites,
-            responsive UI designs and frontend experiences
-            using React, Tailwind CSS and Data Analytics.
+            responsive UI designs, restaurant platforms and
+            modern frontend experiences using React,
+            Tailwind CSS and Data Analytics.
 
           </p>
 
           {/* BUTTONS */}
-
           <div className="hero-buttons">
 
-            <button className="primary-btn">
-              Hire Me
-            </button>
+            {/* Hire Me */}
+            <a
+              href="https://wa.me/918840770829"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
 
-            <button className="secondary-btn">
-              Download CV
-            </button>
+              <button className="primary-btn">
+                Hire Me
+              </button>
+
+            </a>
+
+            {/* Download CV */}
+            <a
+              href="/Aman-CV.pdf"
+              download
+            >
+
+              <button className="secondary-btn">
+                Download CV
+              </button>
+
+            </a>
 
           </div>
 
           {/* STATS */}
-
           <div className="hero-stats">
 
             <div>
@@ -96,7 +106,7 @@ function Hero() {
       </div>
 
     </section>
-  )
+  );
 }
 
-export default Hero
+export default Hero;
