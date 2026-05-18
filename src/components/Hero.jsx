@@ -70,6 +70,8 @@ function Hero() {
             {/* Download CV */}
             <a
               href="/Aman-CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               download
             >
 
