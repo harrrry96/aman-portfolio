@@ -11,7 +11,7 @@ function Navbar() {
           to="/"
           className="text-4xl md:text-5xl font-black tracking-wide text-white hover:text-cyan-400 transition duration-300"
         >
-          Aman.
+           Mohammad Aman khan
         </Link>
 
         {/* NAV LINKS */}
