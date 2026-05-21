@@ -42,7 +42,7 @@ function Projects() {
 
                 {/* Live Preview Button */}
                 <a
-                  href="https://ridox-cafe.vercel.app/"
+                  href=" https://ridoxcafe.com/"s
                   target="_blank"
                   rel="noopener noreferrer"
                 >
