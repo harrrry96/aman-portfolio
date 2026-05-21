@@ -1,117 +1,108 @@
 function Certification() {
   return (
-    <section className="min-h-screen bg-[#020817] flex items-center justify-center px-6 pt-36 pb-20 overflow-hidden">
+    <section className="min-h-screen bg-[#020617] flex items-center justify-center px-6 py-32 overflow-hidden relative">
 
-      {/* MAIN CONTAINER */}
-      <div className="relative max-w-7xl w-full rounded-[45px] overflow-hidden border border-white/10 bg-gradient-to-br from-[#08152f] to-[#020817] shadow-[0_0_60px_rgba(0,255,255,0.08)]">
+      {/* BACKGROUND GLOW */}
+      <div className="absolute top-[-200px] left-[-150px] w-[500px] h-[500px] bg-cyan-500/10 blur-[180px] rounded-full"></div>
 
-        {/* GLOW EFFECT */}
-        <div className="absolute top-[-120px] right-[-120px] w-[300px] h-[300px] bg-cyan-500/20 blur-[120px] rounded-full"></div>
+      <div className="absolute bottom-[-200px] right-[-150px] w-[500px] h-[500px] bg-blue-500/10 blur-[180px] rounded-full"></div>
 
-        <div className="grid lg:grid-cols-2 items-center">
+      {/* MAIN CARD */}
+      <div className="relative max-w-7xl w-full grid lg:grid-cols-2 rounded-[45px] overflow-hidden border border-white/10 bg-white/[0.03] backdrop-blur-2xl shadow-[0_20px_80px_rgba(0,0,0,0.5)]">
 
-          {/* LEFT IMAGE */}
-          <div className="relative h-full overflow-hidden">
+        {/* LEFT SIDE */}
+        <div className="relative h-full overflow-hidden">
 
-            <img
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1400&auto=format&fit=crop"
-              alt="Professional Workspace"
-              className="w-full h-full object-cover hover:scale-110 transition duration-700"
-            />
+          {/* IMAGE */}
+          <img
+            src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1400&auto=format&fit=crop"
+            alt="Professional Workspace"
+            className="w-full h-full object-cover hover:scale-110 transition duration-[2500ms]"
+          />
 
-            {/* OVERLAY */}
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#020817]/40"></div>
+          {/* DARK OVERLAY */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-[#020617]/20 to-transparent"></div>
+
+          {/* FLOATING GLASS CARD */}
+          <div className="absolute bottom-10 left-10 bg-white/10 backdrop-blur-2xl border border-white/10 rounded-3xl px-8 py-6 shadow-2xl">
+
+            <p className="text-slate-300 text-sm tracking-[3px] uppercase mb-2">
+
+              Certified By
+
+            </p>
+
+            <h2 className="text-4xl font-black text-white tracking-wide">
+
+              Coursera
+
+            </h2>
 
           </div>
 
-          {/* RIGHT CONTENT */}
-          <div className="relative z-10 px-8 md:px-16 py-20 text-white">
+        </div>
 
-            {/* SMALL TOP TEXT */}
-            <p className="uppercase tracking-[6px] text-cyan-400 text-sm mb-6 font-medium">
+        {/* RIGHT SIDE */}
+        <div className="relative px-8 md:px-16 py-20 flex flex-col justify-center text-white">
 
-              Coursera Certification
+          {/* TOP TAG */}
+          <div className="inline-block mb-6">
 
-            </p>
+            <span className="bg-cyan-500/10 border border-cyan-400/20 text-cyan-300 px-5 py-2 rounded-full text-sm tracking-[4px] uppercase font-semibold">
 
-            {/* MAIN TITLE */}
-            <h1 className="text-5xl md:text-7xl font-black leading-[1.1] mb-8">
+              Professional Certification
 
-              Data Analysis
-              <br />
-              Certificate
+            </span>
 
-            </h1>
+          </div>
 
-            {/* DESCRIPTION */}
-            <p className="text-slate-400 text-lg md:text-xl leading-10 mb-10 max-w-2xl">
+          {/* TITLE */}
+          <h1 className="text-5xl md:text-7xl font-black leading-[1] mb-8 tracking-tight">
 
-              Successfully completed the Coursera certification
-              “Introduction to Data Analysis using Microsoft Excel”
-              focused on pivot tables, formulas, reporting,
-              data visualization, and analytical insights.
+            Excel
+            <br />
+            Data Analysis
 
-            </p>
+          </h1>
 
-            {/* INFO BOX */}
-            <div className="flex flex-wrap gap-5 mb-10">
+          {/* DESCRIPTION */}
+          <p className="text-slate-400 text-lg md:text-xl leading-10 mb-12 max-w-2xl">
 
-              <div className="bg-white/5 border border-white/10 px-6 py-4 rounded-2xl backdrop-blur-lg">
+            Successfully completed the Coursera certified project
+            “Introduction to Data Analysis using Microsoft Excel”
+            focused on dashboards, formulas, pivot tables,
+            reporting, and professional data visualization.
 
-                <p className="text-slate-400 text-sm mb-1">
-                  Platform
-                </p>
+          </p>
 
-                <h3 className="text-xl font-semibold">
-                  Coursera
-                </h3>
+          {/* BUTTONS */}
+          <div className="flex flex-wrap gap-5">
 
-              </div>
+            {/* VIEW BUTTON */}
+            <a
+              href="/certificate.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-cyan-400 hover:bg-cyan-300 text-black px-10 py-4 rounded-2xl text-lg font-black tracking-wide transition duration-300 hover:scale-105 shadow-[0_10px_40px_rgba(0,255,255,0.3)]">
 
-              <div className="bg-white/5 border border-white/10 px-6 py-4 rounded-2xl backdrop-blur-lg">
+                View Certificate
 
-                <p className="text-slate-400 text-sm mb-1">
-                  Completed
-                </p>
+              </button>
+            </a>
 
-                <h3 className="text-xl font-semibold">
-                  May 2026
-                </h3>
+            {/* VISIT BUTTON */}
+            <a
+              href="https://www.coursera.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="border border-white/15 bg-white/5 backdrop-blur-xl px-10 py-4 rounded-2xl text-lg font-semibold hover:bg-white hover:text-black transition duration-300">
 
-              </div>
+                Visit Coursera
 
-            </div>
-
-            {/* BUTTONS */}
-            <div className="flex flex-wrap gap-5">
-
-              {/* VIEW BUTTON */}
-              <a
-                href="/certificate.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button className="bg-cyan-400 hover:bg-cyan-300 text-black px-10 py-4 rounded-2xl text-lg font-bold transition duration-300 hover:scale-105 shadow-lg shadow-cyan-500/20">
-
-                  View Certificate
-
-                </button>
-              </a>
-
-              {/* COURSERA BUTTON */}
-              <a
-                href="https://www.coursera.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button className="border border-white/20 bg-white/5 backdrop-blur-lg px-10 py-4 rounded-2xl text-lg font-semibold hover:bg-white hover:text-black transition duration-300">
-
-                  Visit Coursera
-
-                </button>
-              </a>
-
-            </div>
+              </button>
+            </a>
 
           </div>
 
